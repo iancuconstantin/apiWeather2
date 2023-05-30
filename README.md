@@ -7,9 +7,13 @@
 
 > The apiWeather is a web application designed to provide weather information about a city. The app is developed to retrieve weather data from a variety of sources and present it to the user in a user-friendly and visually appealing manner.
 
-### ✨ [Demo](https://imgur.com/a/wOZn0ZX)
+### ✨ Screenshots ###
+
+#### Start ####
 ![Start Image](https://imgur.com/a/wOZn0ZX.png)
+#### Favorites List ####
 ![Favorites List](https://imgur.com/26OuIky.png)
+#### More Info ####
 ![More Info](https://imgur.com/WkRczgC.png)
 
 
