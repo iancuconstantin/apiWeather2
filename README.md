@@ -7,6 +7,16 @@
 
 > The apiWeather is a web application designed to provide weather information about a city. The app is developed to retrieve weather data from a variety of sources and present it to the user in a user-friendly and visually appealing manner.
 
+
+### Technologies ###
+
+Following technologies were used in developing this app:
+
+
+1. **HTML:** The standard markup language for creating the structure and content of web pages.
+2. **CSS:** Cascading Style Sheets are utilized to enhance the visual presentation and styling of the application, ensuring an appealing and user-friendly interface.
+3. **JavaScript:** The core programming language used to develop the app, enabling interactive and dynamic functionalities.
+
 ### ✨ Screenshots ###
 
 #### Start ####
