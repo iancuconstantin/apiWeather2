@@ -9,6 +9,8 @@
 
 ### ✨ [Demo](https://imgur.com/a/wOZn0ZX)
 ![Start Image](./Demo/Start.png)
+![Favorites List](https://imgur.com/26OuIky)
+
 
 ## Usage
 
