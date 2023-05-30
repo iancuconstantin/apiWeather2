@@ -13,6 +13,8 @@
 ![Start Image](https://i.imgur.com/UYKswT1.png)
 #### Favorites List ####
 ![Favorites List](https://imgur.com/26OuIky.png)
+#### Suggestions List ####
+![More Info](https://i.imgur.com/rPmxIOf.png)
 #### More Info ####
 ![More Info](https://imgur.com/WkRczgC.png)
 
