@@ -10,7 +10,7 @@
 ### ✨ Screenshots ###
 
 #### Start ####
-![Start Image](https://imgur.com/a/wOZn0ZX.png)
+![Start Image](https://i.imgur.com/UYKswT1.png)
 #### Favorites List ####
 ![Favorites List](https://imgur.com/26OuIky.png)
 #### More Info ####
