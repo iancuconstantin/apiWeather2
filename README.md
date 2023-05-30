@@ -13,9 +13,9 @@
 
 ```sh
 Open project folder in VSCode.
-Install "Live Server Extension".
+Install "Live Server Extension"
 Right click on "index.html" 
-Click on "&#34;"Open with Live Server"
+Click on "Open with Live Server"
 ```
 
 ## Author
