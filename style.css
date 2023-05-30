@@ -1,0 +1,385 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/static/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: MontserratBold;
+    src: url(/static/Montserrat-ExtraBold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: gray;
+}
+
+.card1{
+    height: 380px;
+    width:320px;
+    background-color: rgba(154, 219, 243, 0.36);
+    position: absolute;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius:10px;
+    color: #fcfcfc;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+}
+
+.card2{
+    height: 380px;
+    width:320px;
+    background-color: rgba(102, 182, 113, 0.46);
+    position: absolute;
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.20);
+    border-radius:10px;
+    color: #fcfcfc;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+}
+
+.info-container {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.moreinfo-title {
+    color: black;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 20px;
+    letter-spacing: 4px;
+    line-height: 23px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.469);
+    border-radius: 10%;
+}
+
+.moreinfo-value {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+
+h4{
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    margin: 25px 0 10px 0;
+    margin-top: -10px;
+}
+
+h6{
+    text-align: center;
+    color:#182031;
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    font-weight: 300px;
+    margin-bottom: 25px;
+}
+
+
+.maincard-btns {
+    display: flex;
+    align-items: center;
+}
+
+.weather-card-icon {
+    width: 23%;
+    margin-left: 40%;
+}
+
+h1 {
+    letter-spacing: 2px;
+    text-align: center;
+    font-size:40px;
+    font-weight: 300px;
+}
+
+.extras-container {
+    width: 70%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.feelslike-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: -15px;
+    font-weight: 600px;
+    justify-content: space-around;
+}
+
+.feelslike-container span {
+    color: #d9e2ed;
+    font-size: 17px;
+}
+
+#feelslike {
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: bold;
+}   
+
+#time {
+    font-size: 12px;
+}
+
+.temps-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.temps-selection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#f-select,
+#c-select,
+#wind-icon:hover {
+    cursor: pointer;
+}
+
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 175%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#humid,
+#wind {
+    display: flex;
+    width: -moz-min-content;
+    width: min-content;
+    justify-content: center;
+}
+
+.icons-container div img{
+    width: 40%;
+    margin-right: 10px;
+    justify-content: space-around;
+}
+
+.hide {
+    display:none;
+}
+
+p {
+    flex-shrink: 0;
+    letter-spacing: 1px;
+}
+
+#more-info,
+#go-back {
+    width: 100%;
+    font-size: 11px;
+    font-family: MontserratBold;
+    color: rgb(4, 4, 98);
+    text-decoration: none;
+    text-align: center;
+    padding: 0 38%;
+    cursor:pointer
+}
+
+#go-back{
+    margin-top: 3%;
+}
+
+#more-info,
+#go-back:hover{
+    cursor: pointer;
+}
+#my-fav{
+    margin-left: -12%;
+    width: 5%;  
+}
+
+
+#my-fav:hover{
+    cursor: pointer;
+    filter: invert();
+    background-color: transparent !important;
+}
+
+.my-fav-onclick{
+    filter: invert() brightness(0.5) sepia(1) hue-rotate(-40deg) saturate(5);
+}
+
+/*ERROR MESSAGE*/
+.error-msg {
+    text-align: center;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 5%;
+    color: rgba(220, 20, 60, 0.534);
+    font-size: 20px;
+    font-weight: 600;
+    font-family: MontserratBold;
+}
+
+/* SEARCH BAR */ 
+
+body {
+    background: #29313a;
+}
+
+.input-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search-box {
+    width: 450px;
+    height: 100px;
+    position: relative;
+}
+
+.input {
+    margin-top: -55%;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    box-sizing: border-box;
+    width: 0px;
+    height: 53px;
+    padding: 0 30px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 50px;
+    color: #29313a;
+    border: 3px solid #2c527e;
+    transition: all 0.8s ease;
+    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+}
+
+.btn {
+    margin-top: -55%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #2c527e;
+    border-radius: 50%;
+    left: 50px;
+    top: 10px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 80px;
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.8s ease;
+}
+
+.input.active {
+    width: 280px;
+left: 100px;
+}
+
+@keyframes spin {
+    from {
+          transform: rotate(0deg);
+        }
+    to {
+        transform: rotate(360deg);
+        }
+}
+/*----------------*/
+
+/*----SPINNER---*/
+#spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #1c1764;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+}
+
+#spinner:not([hidden]) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---- SUGGESTIONS ----*/
+.div_hover {
+    background-color: #FFFFFF;
+    border: 1px solid cornflowerblue;
+    border-radius: 25px;
+    padding-left: .5rem;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.div_hover:hover {
+    background-color: #57f1f975;
+    cursor: pointer;
+}
+
+.fav::before{
+    content: "";
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: 0.1rem;
+    left: 5px;
+    margin-right: 0.5rem;
+}
+
+.div-selected {
+    background-color: #57f1f975;
+    border-left: 3px solid cornflowerblue;
+}
+#suggestions{
+    position: absolute;
+    top: -22.5vh;
+    left: 25.5%;
+    width: 55%;
+    z-index: 10;
+}

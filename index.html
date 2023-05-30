@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./stylebackground.css" />
+    <link rel="icon" href="./day/113.png" type="image/x-icon">
+    <title>API WEATHER</title>
+</head>
+<body>  
+        <div class="cloud one"><div class = "error-msg hide">LOCATION NOT <br>FOUND :(</div></div>
+        <div class="cloud two"></div>
+        <div class="cloud three"></div>
+        <div class="input-wrapper">
+            <div class="search-box">
+               <input id="input"type="text" placeholder="Location search... " class="input">
+               <div class="btn"  class="animate">
+                 <i class="fa fa-search" aria-hidden="true"></i>
+               </div>
+        </div>
+        <div id="suggestions"></div>
+        <div id = "weather-card1" class = "card1 hide">
+            <div hidden id="spinner"></div>
+            <h6 id="time"></h4>
+            <h4 id="location"></h4>
+            <h6 id ="weather-text"></h6>
+            <img id = "tempLogo" src="./day/179.png" class="weather-card-icon" alt="weather-icon"/>
+            <div class = "temps-container" >
+                <div class = "temps-selection">
+                    <h1 id = "c-select">C&nbsp;</h1>
+                    <h1>|&nbsp;</h1>
+                    <h1 id = "f-select" style = "color: gray;">F</h1>
+                </div>
+                <h1 id = "temp-value">&deg;</h1>
+            </div>
+            <div class=" extras-container">
+                <div class="feelslike-container">
+                    <h6>FEELS LIKE</h6>
+                    <span id = "feelslike"><strong></strong></span>
+                </div>
+                <div class = "icons-container">
+                    <div id = "humid">
+                        <img src ="./icons/droplet-solid.svg"/>
+                        <p id = "humid-value"><strong></strong></h6>
+                    </div>
+                    <div id = "wind">
+                        <img id = "wind-icon" src ="./icons/wind-solid.svg"/>
+                        <p id ="wind-value"><strong></strong></h6>
+                    </div>
+                </div>
+            </div>
+            <div class ="maincard-btns">
+                <a id = "more-info"><strong>MORE INFO</strong></a>
+                <img id="my-fav" src="/icons/heart-regular.svg"/>
+            </div>
+        </div>
+        <div id = "weather-card2" class = "card2 hide">
+                <div class = "info-container">
+                    <div>
+                        <p class = "moreinfo-title"><strong>Local Time: </strong> <span id= "moreinfo-lt" class="moreinfo-value"></span></p>
+                    </div>
+    
+                    <div>
+                        <p class = "moreinfo-title"><strong>LAT&deg;/ LONG&deg;: </strong> <span id= "moreinfo-latlong"class="moreinfo-value"></span></p>
+                    </div>
+    
+                    <div>
+                        <p class = "moreinfo-title"><strong>Condition:</strong> <span id= "moreinfo-condition" class="moreinfo-value"></span></p>
+                    </div>
+    
+                    <div>
+                        <p class = "moreinfo-title"><strong>Wind (mph): </strong> <span id= "moreinfo-wind-mph" class="moreinfo-value"></span></p>
+                    </div>
+                    
+                    <div>
+                        <p class = "moreinfo-title"><strong>Wind (kph): </strong><span id= "moreinfo-wind-kph"class="moreinfo-value"></span></p>
+                    </div>
+                    
+                    <div>
+                        <p class = "moreinfo-title"><strong>Pressure (mb): </strong> <span id= "moreinfo-pressure"class="moreinfo-value"></span></p>
+                    </div>
+                    <div>
+                        <p class = "moreinfo-title"><strong>Wind Dir.: </strong> <span id= "moreinfo-wind-dir"class="moreinfo-value"></span></p>
+                    </div>
+                    <div>
+                        <p class = "moreinfo-title"><strong>Humidity: </strong> <span id= "moreinfo-humidity"class="moreinfo-value"></span></p>
+                    </div>
+                    <div>
+                        <p class = "moreinfo-title"><strong>Feelslike C&deg;: </strong> <span id= "moreinfo-feelslike-c"class="moreinfo-value"></span></p>
+                    </div>
+                    <div>
+                        <p class = "moreinfo-title"><strong>Feelslike F&deg;: </strong> <span id= "moreinfo-feelslike-f"class="moreinfo-value"></span></p>
+                    </div>
+                    <div>
+                        <p class = "moreinfo-title"><strong>Vis(km): </strong> <span id= "moreinfo-vis"class="moreinfo-value"></span></p>
+                    </div>
+                    <div>
+                        <p class = "moreinfo-title"><strong>UV: </strong><span id= "moreinfo-uv"class="moreinfo-value"></span></p>
+                    </div>  
+                    <div>
+                        <p class = "moreinfo-title"><strong>Gust (mph): </strong><span id= "moreinfo-gust-mph"class="moreinfo-value"></span></p>
+                    </div> 
+                    <div>
+                        <p class = "moreinfo-title"><strong>Gust (kph): </strong><span id= "moreinfo-gust-kph"class="moreinfo-value"></span></p>
+                    </div> 
+                    <a id = "go-back"><strong>GO BACK</strong></a>
+                </div>
+        </div>  
+    <script type = "module" src = "./controller.js"></script>
+</body>
+</html>
