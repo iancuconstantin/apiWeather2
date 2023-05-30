@@ -31,20 +31,19 @@ Following technologies were used in developing this app:
 
 ## Usage
 
-```sh
-Open project folder in VSCode.
-Install "Live Server Extension"
-Right click on "index.html" 
-Click on "Open with Live Server"
-```
+
+1. Open project folder in VSCode.
+2. Install "Live Server Extension"
+3. Right click on "index.html" 
+4. Click on "Open with Live Server"
+
 
 ## API KEY INSTRUCTIONS
-```sh
-    Make an account on https://www.weatherapi.com/
-    Get an API KEY
-    COPY/PASTE it in model.js file at line 2: const WEATHER_API_KEY = "YOUR KEY HERE"
-    
-```
+
+1. Make an account on https://www.weatherapi.com/
+2. Get an API KEY
+3. COPY/PASTE it in model.js file at line 2: const WEATHER_API_KEY = "YOUR KEY HERE"
+
 ## Author
 
 👤 **Bulat Constantin; **
