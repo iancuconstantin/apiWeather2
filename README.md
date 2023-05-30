@@ -38,6 +38,13 @@ Right click on "index.html"
 Click on "Open with Live Server"
 ```
 
+## API KEY INSTRUCTIONS
+```sh
+    Make an account on https://www.weatherapi.com/
+    Get an API KEY
+    COPY/PASTE it in model.js file at line 2: const WEATHER_API_KEY = "YOUR KEY HERE"
+    
+```
 ## Author
 
 👤 **Bulat Constantin; **
